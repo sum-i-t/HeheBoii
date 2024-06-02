@@ -1,14 +1,96 @@
-.title{
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    background-color: rgba(14, 14, 14, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 60px;
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 230px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menugo {
+    transform: translateX(-100%);
+}
+
+.menu nav {
+    padding: 10px;
+}
+
+.menu nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.menu nav li:hover {
+    color: rgba(236, 234, 234, 0.2); /* Darker background color on hover */
+}
+
+.menu nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(14, 14, 14, 0.8);
+    width: max-content;
+    z-index: 1001;
+}
+
+.dropdown-content.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-list {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-list li {
+    padding: 10px;
+}
+
+.dropdown-list li:hover {
+    background-color: rgba(236, 234, 234, 0.2);
+}
+
+.title {
     font-family: "Roboto Mono", monospace;
     background-color: ghostwhite;
-    padding: 50px;
+    padding: 100px;
+    margin-top: 80px; /* Space for fixed menu */
 }
+
 .members-section {
     background-color: grey;
     padding: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .members {
@@ -22,12 +104,13 @@
 
 .members li {
     margin: 15px;
+    transition: transform 0.3s ease-in-out; /* Add transition for member items */
 }
 
 .member {
     position: relative;
-    width: 150px;
-    height: 150px;
+    padding: 100px;
+    transition: transform 0.3s ease-in-out; /* Add transition for member containers */
 }
 
 .member img {
@@ -49,7 +132,29 @@
     border-radius: 0 0 10% 10%;
 }
 
+.members li:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; /* Ensure smooth transition on hover */
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.footer {
+    background-color: bisque;
+}
+
+.hamburger {
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+}
+
+.cross {
+    display: none;
+    margin-left: 300px;
 }
