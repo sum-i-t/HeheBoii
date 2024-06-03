@@ -1,13 +1,18 @@
 // Show the menu when mouse is over the hamburger icon
 document.querySelector(".hamburger").addEventListener("mouseover", () => {
     document.querySelector(".menu").classList.remove("menugo");
-    document.querySelector(".ham").style.display = 'none';
+    setTimeout(() => {
+        document.querySelector(".ham").style.display = 'none';
+    }, 100);
+    
 });
 
 // Hide the menu when mouse leaves the menu
 document.querySelector(".menu").addEventListener("mouseleave", () => {
     document.querySelector(".menu").classList.add("menugo");
-    document.querySelector(".ham").style.display = 'inline';
+    setTimeout(() => {
+        document.querySelector(".ham").style.display = 'inline';
+    }, 100);
 });
 
 // Dropdown functionality for members

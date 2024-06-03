@@ -1,5 +1,19 @@
 * {
     font-family: "Poppins", sans-serif;
+    color: whitesmoke;
+    margin: 0;
+    /* Reset margin for all elements */
+    padding: 0;
+    /* Reset padding for all elements */
+}
+
+.description {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 1) 100%);
+    font-style: italic;
+    text-align: center;
+    padding: 10px 0;
+    /* Adjust padding as needed */
 }
 
 .container {
@@ -45,7 +59,7 @@
 
 .menu a:hover,
 .dropdown-boiss:hover {
-    color: rgb(15, 16, 16);
+    color: rgb(184, 184, 184);
 }
 
 .boiis {
@@ -64,7 +78,7 @@
 }
 
 .boiis a:hover {
-    color: rgb(15, 16, 16);
+    color: rgb(184, 184, 184);
 }
 
 .boiis.show {
@@ -77,20 +91,35 @@
 }
 
 .title {
-    font-family: "Poppins", sans-serif;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 1) 100%);
     font-weight: 700;
     font-style: italic;
-    background-color: ghostwhite;
-    padding: 100px;
-    margin-top: 80px;
+    padding: 10px 0;
+    /* Adjust padding as needed */
+    margin: 0;
+    /* Remove margin */
 }
 
 .heading {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 1) 100%);
     font-size: xx-large;
     font-weight: 600;
     text-align: center;
-    /* width: 100%; */
     padding: 3%;
+    margin: 0;
+    /* Remove margin */
+}
+
+.members {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 1) 100%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    mix-blend-mode: darken;
+    margin: 0;
+    /* Remove margin */
 }
 
 .row {
@@ -98,6 +127,7 @@
     flex-wrap: wrap;
     gap: 100px;
     justify-content: center;
+    padding: 10px;
 }
 
 .col {
@@ -110,7 +140,7 @@
     position: relative;
     width: 300px;
     height: 300px;
-    transition: transform 0.3s ease-in-out; /* Add transition property here */
+    transition: transform 0.3s ease-in-out;
 }
 
 .profile-card:hover {
@@ -154,6 +184,8 @@ a {
 
 .footer {
     background-color: bisque;
+    margin: 0;
+    /* Remove margin */
 }
 
 .hamburger {
@@ -166,4 +198,37 @@ a {
 
 .ham {
     display: block;
+}
+
+footer {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 1) 100%);
+    margin: 0;
+    /* Remove margin */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: rgb(184, 184, 184);
+}
+
+.footer-section i {
+    font-size: 24px;
+    margin: 0 5px;
 }
