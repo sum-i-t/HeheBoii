@@ -4,15 +4,16 @@
 }
 
 .menu {
-    background-color: rgba(14, 14, 14, 0.8); /* Semi-transparent background */
+    background-color: rgba(14, 14, 14, 0.8);
+    /* Semi-transparent background */
     color: white;
-    padding: 60px;
+    padding: 40px;
     transition: transform 0.3s ease-in-out;
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
-    width: 230px;
+    width: 130px;
     z-index: 1000;
     cursor: pointer;
 }
@@ -21,67 +22,65 @@
     transform: translateX(-100%);
 }
 
-.menu nav {
-    padding: 10px;
-}
-
-.menu nav li {
-    list-style: none;
+.menu a,
+.dropdown-boiss {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
     font-size: 20px;
-    padding: 15px;
+    color: #ffffff;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
 
-.menu nav li:hover {
-    color: rgba(236, 234, 234, 0.2); /* Darker background color on hover */
+.menu a:hover,
+.dropdown-boiss:hover {
+    color: rgb(15, 16, 16);
 }
 
-.menu nav ul {
-    padding: 0;
-    margin: 0;
+.boiis {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    padding-left: 8px;
 }
 
-.dropdown-content {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s, visibility 0.2s;
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(14, 14, 14, 0.8);
-    width: max-content;
-    z-index: 1001;
+.boiis a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
 }
 
-.dropdown-content.show {
-    opacity: 1;
-    visibility: visible;
+.boiis a:hover {
+    color: rgb(15, 16, 16);
 }
 
-.dropdown:hover .dropdown-content {
-    opacity: 1;
-    visibility: visible;
+.boiis.show {
+    max-height: 1000px; /* Arbitrary large value to ensure the content is fully visible */
 }
 
-.dropdown-list {
-    padding: 0;
-    margin: 0;
-}
-
-.dropdown-list li {
-    padding: 10px;
-}
-
-.dropdown-list li:hover {
-    background-color: rgba(236, 234, 234, 0.2);
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
 }
 
 .title {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
     background-color: ghostwhite;
     padding: 100px;
-    margin-top: 80px; /* Space for fixed menu */
+    margin-top: 80px;
+    /* Space for fixed menu */
 }
 
 .members-section {
@@ -104,13 +103,15 @@
 
 .members li {
     margin: 15px;
-    transition: transform 0.3s ease-in-out; /* Add transition for member items */
+    transition: transform 0.3s ease-in-out;
+    /* Add transition for member items */
 }
 
 .member {
     position: relative;
     padding: 100px;
-    transition: transform 0.3s ease-in-out; /* Add transition for member containers */
+    transition: transform 0.3s ease-in-out;
+    /* Add transition for member containers */
 }
 
 .member img {
@@ -134,7 +135,8 @@
 
 .members li:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease-in-out; /* Ensure smooth transition on hover */
+    transition: transform 0.3s ease-in-out;
+    /* Ensure smooth transition on hover */
 }
 
 a {
@@ -150,11 +152,11 @@ a {
     position: fixed;
     cursor: pointer;
     top: 10px;
-    left: 10px;
+    left: 20px;
     z-index: 1001;
+    /* Ensure the hamburger is always on top */
 }
 
-.cross {
-    display: none;
-    margin-left: 300px;
+.ham {
+    display: block;
 }
