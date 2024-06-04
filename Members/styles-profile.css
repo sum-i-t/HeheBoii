@@ -1,11 +1,14 @@
-.main h2 {
+.main{
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 1) 100%);
+}
+
+.main h2 {
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 6%;
     border: 1px solid black;
-    font-size: 2em; /* Increase the font size */
+    font-size: 2em;
 }
 
 .profile-info {
@@ -16,26 +19,26 @@
     padding: 20px;
     margin: 10px;
     box-shadow: 0 0 0 12px #1b1b1b;
-    flex-direction: column; /* Change flex direction to column */
-
+    flex-wrap: wrap;
 }
 
 .profile-details {
     display: flex;
-    align-items: flex-start;
-    /* padding: auto; */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .profile-info-img {
-    height: 400px;
-    width: 500px;
-    max-width: 25vw;
+    height: auto;
+    width: 80%;
+    max-width: 500px;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-bottom: 20px;
     box-shadow: 0 0 0 3px #0a0a0a;
 }
 
-.desc{
+.desc {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 1) 100%);
     padding: 20px;
@@ -46,17 +49,18 @@
     letter-spacing: 0.05em;
     line-height: 1.5em;
     margin: 20px;
-    position: relative; /* Add relative positioning */
-    min-height: 300px; /* Ensure minimum height to provide space for social links */
+    position: relative;
+    min-height: 300px;
     max-height: 1010px;
-    min-width: 380px;
+    width: 80%;
+    max-width: 500px;
 }
+
 .social-links {
     font-family: "Poppins", sans-serif;
     font-style: italic;
     padding: 20px;
-    /* margin-top: 50px; */
-    position: relative; /* Change position to absolute */
+    position: relative;
 }
 
 .social-links .text {
@@ -80,4 +84,24 @@
 
 .social-links a:hover {
     transform: scale(1.1);
+}
+
+@media (min-width: 769px) {
+    .profile-details {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .profile-info-img {
+        margin-bottom: 0;
+        margin-right: 20px;
+        width: 25vw;
+        max-width: 500px;
+    }
+
+    .desc {
+        margin: 20px;
+        min-width: 380px;
+        width: auto;
+    }
 }
