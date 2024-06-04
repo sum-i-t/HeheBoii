@@ -1,0 +1,82 @@
+.main h2 {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 1) 100%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 6%;
+    border: 1px solid black;
+    font-size: 2em; /* Increase the font size */
+}
+
+.profile-info {
+    display: flex;
+    align-items: flex-start;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 1) 100%);
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 0 12px #1b1b1b;
+    flex-direction: column; /* Change flex direction to column */
+
+}
+
+.profile-details {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-info-img {
+    height: 400px;
+    width: 500px;
+    max-width: 25vw;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 0 0 3px #0a0a0a;
+}
+
+.desc{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 1) 100%);
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+    font-style: italic;
+    border-radius: 10px;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    margin: 20px;
+    position: relative; /* Add relative positioning */
+    min-height: 300px; /* Ensure minimum height to provide space for social links */
+    max-height: 1010px;
+    min-width: 380px;
+}
+.social-links {
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    padding: 20px;
+    /* margin-top: 50px; */
+    position: relative; /* Change position to absolute */
+}
+
+.social-links .text {
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+.social-links .media {
+    display: flex;
+}
+
+.social-links img.icons {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.social-links a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}

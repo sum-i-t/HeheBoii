@@ -167,8 +167,8 @@
     background: rgba(0, 0, 0, 0.6);
     padding: 10px 0;
     text-align: center;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
 }
 
 .profilename {
@@ -180,12 +180,6 @@
 a {
     text-decoration: none;
     color: inherit;
-}
-
-.footer {
-    background-color: bisque;
-    margin: 0;
-    /* Remove margin */
 }
 
 .hamburger {
