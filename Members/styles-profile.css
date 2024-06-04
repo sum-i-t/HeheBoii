@@ -23,6 +23,7 @@
 .profile-details {
     display: flex;
     align-items: flex-start;
+    /* padding: auto; */
 }
 
 .profile-info-img {
