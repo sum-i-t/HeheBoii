@@ -33,6 +33,7 @@
     width: 130px;
     z-index: 1000;
     cursor: pointer;
+    overflow-y: auto;
 }
 
 .menugo {
@@ -95,7 +96,7 @@
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(67, 67, 67, 1) 100%);
     font-weight: 700;
     font-style: italic;
-    padding: 10px 0;
+    padding: 50px 0;
     /* Adjust padding as needed */
     margin: 0;
     /* Remove margin */

@@ -15,6 +15,18 @@ document.querySelector(".menu").addEventListener("mouseleave", () => {
     }, 100);
 });
 
+document.addEventListener("touchstart", (e) => {
+    const menu = document.querySelector(".menu");
+    const hamburger = document.querySelector(".hamburger");
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+        menu.classList.add("menugo");
+        setTimeout(() => {
+            document.querySelector(".ham").style.display = 'inline';
+        }, 100);
+    }
+});
+
+
 // Dropdown functionality for members
 let dropdown = document.querySelector(".dropdown-boiss");
 let dropdownContent = document.querySelector(".boiis");
